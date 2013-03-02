@@ -3,4 +3,5 @@
 # Except this file
 !util/
 !util/*
+!util/*/*
 !.gitignore
