@@ -107,6 +107,7 @@
   'pck' => array(xl('My Pay')    , 0, 'reports/paycheck.php'),
   'uur' => array(xl('Unit Usage')    , 0, 'reports/units_report.php'),
   'rck' => array(xl('CBHA Review Pay')    , 0, 'reports/reviewer_pay_report.php'),
+  'spp' => array(xl('Supervision Pay')    , 0, 'reports/supervision_pay_report.php'),
   'adm' => array(xl('Admin')     , 0, 'usergroup/admin_frameset.php'),
   'rep' => array(xl('Reports')   , 0, 'reports/index.php'),
   'ono' => array(xl('Ofc Notes') , 0, 'main/onotes/office_comments.php'),
@@ -1012,7 +1013,7 @@ if ($GLOBALS['athletic_team']) {
   </li>
   <li class="open"><a class="collapsed" id="patimg" ><span><?php xl('Demographics','e') ?></span></a>
     <ul>
-      <?php genMiscLink('RTop','new','0',xl('Patient Finder'),'main/finder/dynamic_finder.php'); ?>
+      <?php genMiscLink('RTop','fin','0',xl('Patient Finder'),'main/finder/dynamic_finder.php'); ?>
       <?php genTreeLink('RTop','new',($GLOBALS['full_new_patient_form'] ? xl('New/Search') : xl('New'))); ?>
       <?php genTreeLink('RTop','dem',xl('Current')); ?>
     </ul>
@@ -1133,6 +1134,7 @@ if ($GLOBALS['athletic_team']) {
       <?php genMiscLink('RTop','pck','0',xl('My Pay'),'reports/paycheck.php'); ?>
       <?php genMiscLink('RTop','uur','0',xl('Unit Usage'),'reports/units_report.php'); ?>
       <?php genMiscLink('RTop','rck','0',xl('CBHA Reviewer Pay'),'reports/reviewer_pay_report.php'); ?>
+      <?php genMiscLink('RTop','spp','0',xl('Supervision Pay'), 'billing/supervision_pay_report.php'); ?>
       <?php if(acl_check('patients','docs')) genMiscLink('RTop','adm','0',xl('New Documents'),'../controller.php?document&list&patient_id=0'); ?>
     </ul>
   </li>
@@ -1427,6 +1429,7 @@ if (!empty($reg)) {
       <?php genMiscLink('RTop','pck','0',xl('My Pay'),'reports/paycheck.php'); ?>
       <?php genMiscLink('RTop','uur','0',xl('Unit Usage'),'reports/units_report.php'); ?>
       <?php genMiscLink('RTop','rck','0',xl('CBHA Reviewer Pay'),'reports/reviewer_pay_report.php'); ?>
+      <?php genMiscLink('RTop','spp','0',xl('Supervision Pay'), 'billing/supervision_pay_report.php'); ?>
       <?php if(acl_check('patients','docs')) genMiscLink('RTop','adm','0',xl('New Documents'),'../controller.php?document&list&patient_id=00'); ?>
     </ul>
   </li>

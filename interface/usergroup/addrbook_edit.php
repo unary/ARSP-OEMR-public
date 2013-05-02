@@ -5,6 +5,9 @@
  // modify it under the terms of the GNU General Public License
  // as published by the Free Software Foundation; either version 2
  // of the License, or (at your option) any later version.
+ //
+ //  Modified for BH use, utilizing as an additional user config
+ // interface for managing contract and intern health workers. -Art Eaton OEMR 2013
 
  //SANITIZE ALL ESCAPES
  $sanitize_all_escapes=true;
@@ -155,6 +158,10 @@ td { font-size:10pt; }
     "phonew2 = "      . invalue('form_phonew2')      . ", " .
     "phonecell = "    . invalue('form_phonecell')    . ", " .
     "fax = "          . invalue('form_fax')          . ", " .
+<<<<<<< HEAD
+=======
+    
+>>>>>>> origin/Artbranch1
     "hiredate = "        . invalue('form_hiredate')        . ", "  .
      "evaldate = "        . invalue('form_evaldate')        . ", "  .
      "supdate = "        . invalue('form_supdate')        . ", "  .

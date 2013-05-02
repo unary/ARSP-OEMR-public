@@ -5,6 +5,7 @@ include_once("../../globals.php");
 <html><head>
 <? html_header_show();?>
 <link rel=stylesheet href="<?echo $css_header;?>" type="text/css">
+<link rel=stylesheet type="text/css" href="print.css" />
 </head>
 <body <?echo $top_bg_line;?> topmargin=0 rightmargin=0 leftmargin=2 bottommargin=0 marginwidth=2 marginheight=0>
 <?php
@@ -15,17 +16,21 @@ $obj = formFetch("form_cpn", $_GET["id"]);
 ?>
 <form method=post action="<?echo $rootdir?>/forms/CPN/save.php?mode=update&id=<?echo $_GET["id"];?>" name="my_form">
 <span class="title"><center><b>Brief Status Exam</b></center></span><br><br>
+
 <center>
-<? if($obj{"finalize"}!="on"){?>
-<a href="javascript:top.restoreSession();document.my_form.submit();" class="link_submit">[Save]</a>
-<a href="<?php echo $GLOBALS['form_exit_url']; ?>" class="link"
- onclick="top.restoreSession()">[Don't Save Changes]</a><br>
- <input type=checkbox name='finalize' <? if ($obj{"finalize"} == "on") {echo "checked";};?>>&nbsp;<b>Check here to finalize this note:</b><br>
- <?}else{echo"This form has been finalized and may not be edited!<br>";?>
- <a href="<?php echo $GLOBALS['form_exit_url']; ?>" class="link"
- onclick="top.restoreSession()">[RETURN TO ENCOUNTER]</a>
+<? if($obj{"finalize"}==="off"OR ($_SESSION["authUser"] ==="ncuddy" OR $_SESSION["authUser"] ==="leaton" OR $_SESSION["authUser"] ==="Art")){?>
+	<a href="javascript:top.restoreSession();document.my_form.submit();" class="link_submit">[Save]</a>
+	<a href="<?php echo $GLOBALS['form_exit_url']; ?>" class="link"
+ 	onclick="top.restoreSession()">[Don't Save Changes]</a><br>
+ 	<input type=checkbox name='finalize' <? if ($obj{"finalize"} == "on") {echo "checked";};?>>&nbsp;<b>Check here to finalize this note:</b><br>
+ <?	}else{
+	 	echo"This form has been finalized and may not be edited!<br>";?>
+ 		<a href="<?php echo $GLOBALS['form_exit_url']; ?>" class="link"
+ 		onclick="top.restoreSession()">[RETURN TO ENCOUNTER]</a>
  <?}?>
  </center>
+<br></br>
+<div class="noprint"><a href="javascript:window.print();">Print This Page</a></div>
 <br></br>
 
 <?php $res = sqlStatement("SELECT date,counselor_id,facility FROM form_encounter WHERE encounter = $encounter");

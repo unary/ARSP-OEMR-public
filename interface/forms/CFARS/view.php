@@ -16,7 +16,7 @@ $obj = formFetch("form_cfars", $_GET["id"]);
 <form method=post action="<?echo $rootdir?>/forms/cfars/save.php?mode=update&id=<?echo $_GET["id"];?>" name="my_form">
 <span class="title"><center><b>Functional Assessment Rating Scale</b></center></span><br><br>
 <center>
-<? if($obj{"finalize"}!="on"){?>
+<? if($obj{"finalize"}==="off"OR ($_SESSION["authUser"] ==="ncuddy" OR $_SESSION["authUser"] ==="leaton" OR $_SESSION["authUser"] ==="Art")){?>
 <a href="javascript:top.restoreSession();document.my_form.submit();" class="link_submit">[Save]</a>
 <a href="<?php echo $GLOBALS['form_exit_url']; ?>" class="link"
  onclick="top.restoreSession()">[Don't Save Changes]</a><br>

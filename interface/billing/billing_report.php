@@ -403,12 +403,12 @@ $ThisPageSearchCriteriaDisplayRadioMaster[5]= array( xl("All"),xl("Authorized"),
 $ThisPageSearchCriteriaRadioKeyMaster[5]="%,1,0";
 $ThisPageSearchCriteriaDisplayRadioMaster[6]= array( xl("All"),xl("None"),xl("Ins 1"),xl("Ins 2 or Ins 3") );
 $ThisPageSearchCriteriaRadioKeyMaster[6]="all,0,1,2";
-$ThisPageSearchCriteriaDisplayRadioMaster[7]= array( xl("All"),xl("Angela Lahue"),xl("Brie Blankenship"),xl("Carly Paro"),xl("Carmen Pupo"),xl("Damia Kelly"),xl("Dana Kahl"),xl("Dawn Leonard"),xl("Deb Bassinger"),xl("Deborah Clements"),xl("Deena Banner"),xl("Delphine Herman"),xl("Diana Andre"),xl("Ed Shoemaker"),xl("Heather Harding"),xl("Ileana Flores"),xl("Jennifer Teoli"),xl("Jennifer Van Allen"),xl("Karin Neville"),xl("Katie Wayt"),xl("Kim Acheson"),xl("Kim Lisle"),xl("Kristina Cole"),xl("Leah Benson"),xl("Lily Vo"),xl("Linda Eaton"),xl("Lizette Ovalle"),xl("Mandy McClellan"),xl("Marielle Kantzler"),xl("Marzena Murphy"),xl("Megan Outlaw"),xl("Melissa Patrizzi"),xl("Molly Cole"),xl("Natalie Cuddy"),xl("Natalie Gordon"),xl("Phyllis Dougherty"),xl("Roni Lowery"),xl("Samantha Kopp"),xl("Stacy Thompson"),xl("Stephanie Bottoni"),xl("Stephanie Goar"),xl("Tia Stark"));//Display Value
-$ThisPageSearchCriteriaRadioKeyMaster[7]="all,129,106,123,23,12,31,30,53,108,125,141,142,13,40,47,88,126,26,109,93,116,113,16,97,8,87,69,127,94,79,107,70,68,115,10,38,86,89,110,102,71";//Key
-$ThisPageSearchCriteriaDisplayRadioMaster[8]= array( xl("All"),xl("None"),xl("Spec Serv"),xl("Adpt Stdy"),xl("Diag Assmnt"),xl("Spec Assmnt"),xl("CBHA Rev"),xl(" H0031(HA) CBHA"),xl("H2019(HR) IFT"),xl("H2019(HO) TBOS-Thrpy"),xl("H2019(HM) TBOS-TS Mag"),xl("H0031 CFARS"),xl("T1015 MM"),xl("T1017 TCM"),xl("H2000(HO) P E"),xl("H0031(HO) I-DA"),xl("H0031(HN) BPSA"),xl("H2010(HO) BBSE"),xl("H0032 ITP"),xl("H0032(TS) TPR"),xl("H2019(HN) TBOS TS"));//Display Value
-$ThisPageSearchCriteriaRadioKeyMaster[8]="all,,000000,000001,000002,000003,X626,H0031,H2019,H2019,H2019,H0031,T1015,T1017,H2000,H0031,H0031,H2010,H0032,H0032,H2019";//Key
-$ThisPageSearchCriteriaDisplayRadioMaster[9]= array( xl("All"),xl("None"),xl("HA"),xl("HR"),xl("HO"),xl("HM"),xl("HN"),xl("TS"));//Display Value
-$ThisPageSearchCriteriaRadioKeyMaster[9]="all,,HA,HR,HO,HM,HN,TS";//Key
+$ThisPageSearchCriteriaDisplayRadioMaster[7]= array( xl("All"),xl("Angela Lahue"),xl("Brandon Barnett"),xl("Brie Blankenship"),xl("Carly Paro"),xl("Carmen Pupo"),xl("Damia Kelly"),xl("Dana Kahl"),xl("Dawn Leonard"),xl("Deb Bassinger"),xl("Deborah Clements"),xl("Deena Banner"),xl("Delphine Herman"),xl("Diana Andre"),xl("Ed Shoemaker"),xl("Heather Harding"),xl("Ileana Flores"),xl("Jenniger Suiters"),xl("Jennifer Teoli"),xl("Jennifer Van Allen"),xl("Karmivis Santiago"),xl("Karin Neville"),xl("Katie Wayt"),xl("Kim Acheson"),xl("Kim Lisle"),xl("Kristina Cole"),xl("Lauren Rivera"),xl("Leah Benson"),xl("Lily Vo"),xl("Linda Dorremocea"),xl("Linda Eaton"),xl("Lizette Ovalle"),xl("Mandy McClellan"),xl("Marielle Kantzler"),xl("Marzena Murphy"),xl("Megan Outlaw"),xl("Melissa Patrizzi"),xl("Mickia Freeman"),xl("Molly Cole"),xl("Natalie Cuddy"),xl("Natalie Gordon"),xl("Phyllis Dougherty"),xl("Robin Chaloune"),xl("Roni Lowery"),xl("Samantha Kopp"),xl("Stacy Thompson"),xl("Stephanie Bottoni"),xl("Stephanie Goar"),xl("Tia Stark"));//Display Value
+$ThisPageSearchCriteriaRadioKeyMaster[7]="all,129,161,106,123,23,12,31,30,53,108,125,141,142,13,40,47,160,88,126,156,26,109,93,116,113,157,16,97,168,8,151,69,127,94,79,107,159,70,68,115,10,162,38,86,89,110,102,71";//Key
+$ThisPageSearchCriteriaDisplayRadioMaster[8]= array( xl("All"),xl("None"),xl("Spec Serv"),xl("Adpt Stdy"),xl("Diag Assmnt"),xl("Spec Assmnt"),xl("CBHA Rev"),xl(" H0031(HA) CBHA"),xl("H2019(HR) IFT"),xl("H2019(HO) TBOS-Thrpy"),xl("H2019(HM) TBOS-TS Mag"),xl("H0031 CFARS"),xl("T1015 MM"),xl("T1017 TCM"),xl("H2000(HO) P E"),xl("H0031(HO) I-DA"),xl("H0031(HN) BPSA"),xl("H2010(HO) BBSE"),xl("H0032 ITP"),xl("H0032(TS) TPR"),xl("H2019(HN) TBOS TS"),xl("H2019(HQ) Group"));//Display Value
+$ThisPageSearchCriteriaRadioKeyMaster[8]="all,,000000,000001,000002,000003,X626,H0031,H2019,H2019,H2019,H0031,T1015,T1017,H2000,H0031,H0031,H2010,H0032,H0032,H2019,H2019";//Key
+$ThisPageSearchCriteriaDisplayRadioMaster[9]= array( xl("All"),xl("None"),xl("HA"),xl("HR"),xl("HO"),xl("HM"),xl("HN"),xl("TS"),xl("HQ"));//Display Value
+$ThisPageSearchCriteriaRadioKeyMaster[9]="all,,HA,HR,HO,HM,HN,TS,HQ";//Key
 //The below section is needed if there is any 'query_drop_down' type in the $ThisPageSearchCriteriaDataTypeMaster
 $ThisPageSearchCriteriaQueryDropDownMaster[1]="SELECT name,id FROM x12_partners;";
 $ThisPageSearchCriteriaQueryDropDownMasterDefault[1]= xl("All");//Only one item will be here
@@ -1013,8 +1013,13 @@ if(is_array($ret))
     $rhtml .= '<td><span style="font-size:8pt;">&nbsp;&nbsp;&nbsp;';
     if ($iter['id']) $rhtml .= getProviderName(empty($iter['counselor_id']) ? text($iter['enc_provider_id']) : text($iter['counselor_id']));
     $rhtml .= "</span></td>\n";
+    $rhtml .= '<td><span style="font-size:8pt;">&nbsp;&nbsp;&nbsp;';
+        if ($iter['id']) $rhtml .= xlt("        Units:  ");
+    if ($iter['id']) $rhtml .= text($iter{"units"});
+    $rhtml .= "</span></td>\n";
     $rhtml .= '<td width=100>&nbsp;&nbsp;&nbsp;<span style="font-size:8pt;">';
     if ($iter['id']) $rhtml .= text(oeFormatSDFT(strtotime($iter{"date"})));
+
     $rhtml .= "</span></td>\n";
     if ($iter['id'] && $iter['authorized'] != 1) {
       $rhtml .= "<td><span class=alert>".xlt("Note: This code is unauthorized.")."</span></td>\n";

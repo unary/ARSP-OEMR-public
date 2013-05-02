@@ -3,10 +3,13 @@
 include_once("../../globals.php");
 include_once("$srcdir/api.inc");
 include_once("$srcdir/forms.inc");
+
 foreach ($_POST as $k => $var) {
 $_POST[$k] = mysql_escape_string($var);
 echo "$var\n";
 }
+
+
 if ($encounter == "")
 $encounter = date("Ymd");
 if ($_GET["mode"] == "new"){
