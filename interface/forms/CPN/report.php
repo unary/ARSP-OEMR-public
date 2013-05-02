@@ -12,6 +12,7 @@ $obj = formFetch("form_cpn", $id);
 <link rel=stylesheet href="<?echo $css_header;?>" type="text/css">
 </head>
 <body <?echo $top_bg_line;?> topmargin=0 rightmargin=0 leftmargin=2 bottommargin=0 marginwidth=2 marginheight=0>
+
 <span class="title"><center><b>Counseling Progress Note</b></center></span>
 <br></br>
 

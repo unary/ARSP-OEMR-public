@@ -16,6 +16,8 @@ require_once("../../library/invoice_summary.inc.php");
   }
 
 
+  if (! acl_check('acct', 'rep')) die(xl("Unauthorized access."));
+
   $INTEGRATED_AR = $GLOBALS['oer_config']['ws_accounting']['enabled'] === 2;
 
   if (!$INTEGRATED_AR) {
@@ -94,7 +96,7 @@ require_once("../../library/invoice_summary.inc.php");
 			</td>
 			<td>
 				<?php
-				if (acl_check('admin', 'super')) {
+				if (acl_check('acct', 'rep_a')) {
 					// Build a drop-down list of providers.
 					//
 					$query = "select id, lname, fname from users where " .

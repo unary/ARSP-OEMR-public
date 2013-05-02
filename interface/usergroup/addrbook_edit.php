@@ -5,9 +5,6 @@
  // modify it under the terms of the GNU General Public License
  // as published by the Free Software Foundation; either version 2
  // of the License, or (at your option) any later version.
- //
- //  Modified for BH use, utilizing as an additional user config
- // interface for managing contract and intern health workers. -Art Eaton OEMR 2013
 
  //SANITIZE ALL ESCAPES
  $sanitize_all_escapes=true;
@@ -122,7 +119,6 @@ td { font-size:10pt; }
   $form_fname = invalue('form_fname');
   $form_lname = invalue('form_lname');
   $form_mname = invalue('form_mname');
-
  }
 
   if ($userid) {
@@ -158,18 +154,13 @@ td { font-size:10pt; }
     "phonew2 = "      . invalue('form_phonew2')      . ", " .
     "phonecell = "    . invalue('form_phonecell')    . ", " .
     "fax = "          . invalue('form_fax')          . ", " .
-<<<<<<< HEAD
-=======
     
->>>>>>> origin/Artbranch1
-    "hiredate = "        . invalue('form_hiredate')        . ", "  .
+     "hiredate = "        . invalue('form_hiredate')        . ", "  .
      "evaldate = "        . invalue('form_evaldate')        . ", "  .
      "supdate = "        . invalue('form_supdate')        . ", "  .
      "liabdate = "        . invalue('form_liabdate')        . ", "  .
      "screendate = "        . invalue('form_screendate')        . ", "  .
      "keycode = "        . invalue('form_keycode')        . ", "  .
-      "fars = "        . invalue('form_fars')        . ", "  .
-       "cfars = "        . invalue('form_cfars')        . ", "  .
      
     "rate_one = "        . invalue('form_rate_one')        . ", "  .
     "rate_two = "        . invalue('form_rate_two')        . ", "  .
@@ -188,7 +179,7 @@ td { font-size:10pt; }
     "specialty, organization, valedictory, assistant, billname, email, url, " .
     "street, streetb, city, state, zip, " .
     "street2, streetb2, city2, state2, zip2, " .
-    "phone, phonew1, phonew2, phonecell, fax, notes,hiredate,evaldate,supdate,liabdate,screendate,keycode,fars,cfars,rate_one,rate_two,rate_three,c_super, abook_type "            .
+    "phone, phonew1, phonew2, phonecell, fax, notes,hiredate,evaldate,supdate,liabdate,screendate,keycode,rate_one,rate_two,rate_three,c_super, abook_type "            .
     ") VALUES ( "                        .
     "'', "                               . // username
     "'', "                               . // password
@@ -236,8 +227,6 @@ td { font-size:10pt; }
         invalue('form_liabdate')         . ", " .
          invalue('form_screendate')         . ", " .
           invalue('form_keycode')         . ", " .
-          invalue('form_fars')         . ", " .
-          invalue('form_cfars')         . ", " .
     invalue('form_rate_one')         . ", " .
     invalue('form_rate_two')         . ", " .
     invalue('form_rate_three')         . ", " .
@@ -520,16 +509,6 @@ td { font-size:10pt; }
     value='<?php echo attr($row['c_super']); ?>' class='inputtext' />
   </td>
  </tr> 
- 
- <tr>
-  <td nowrap><b><?php echo xlt('CFARS Number'); ?>:</b></td>
-  <td>
-   <input type='text' size='11' name='form_cfars' value='<?php echo attr($row['cfars']); ?>'
-    maxlength='30' class='inputtext' />&nbsp;
-   <b><?php echo xlt('FARS Number'); ?>:</b><input type='text' size='11' name='form_fars' value='<?php echo attr($row['fars']); ?>'
-    maxlength='30' class='inputtext' />
-  </td>
- </tr>
  
  <tr>
   <td nowrap><b><?php echo xlt('Notes'); ?>:</b></td>

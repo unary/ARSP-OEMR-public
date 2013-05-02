@@ -238,11 +238,8 @@ function echoLine($lino, $codetype, $code, $modifier, $ndc_info='',
     else {
       echo "  <td class='billcell' align='center'$usbillstyle></td>\n";
     }
-    if (acl_check('acct','authbill')){
     echo "  <td class='billcell' align='center'$usbillstyle><input type='checkbox' name='bill[".attr($lino)."][auth]' " .
-      "value='1'" . ($auth ? " checked" : "") . " /></td>\n";}else{
-	      echo "  <td class='billcell' align='center'$usbillstyle><input type='checkbox' name='bill[".attr($lino)."][auth]' " .
-      "value='1'" . ($auth ? " checked" : "") . " disabled /></td>\n";}
+      "value='1'" . ($auth ? " checked" : "") . " /></td>\n";
     echo "  <td class='billcell' align='center'><input type='checkbox' name='bill[".attr($lino)."][del]' " .
       "value='1'" . ($del ? " checked" : "") . " /></td>\n";
   }
